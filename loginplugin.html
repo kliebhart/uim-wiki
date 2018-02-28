@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">    
+    <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
@@ -25,6 +25,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+    </script>
     
 </head> 
 
@@ -559,15 +567,8 @@ echo $y;
         </div><!--//promo-block-->
         
     </div><!--//page-wrapper-->
-    
-    <footer id="footer" class="footer text-center">
-        <div class="container">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com/" targe="_blank">Xiaoying Riley</a> for developers</small>
-            
-        </div><!--//container-->
-    </footer><!--//footer-->
-    
+
+    <div id="footer"></div>
      
     <!-- Main Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
